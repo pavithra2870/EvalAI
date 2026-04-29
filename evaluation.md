@@ -120,33 +120,12 @@ The system performs better on medium and hard problems than on easy ones, indica
 
 ## Technical Analysis
 
-### System Architecture Strengths
-
 1. **Clean Separation**: Well-structured backend with clear separation of concerns
 2. **RAG Implementation**: Effective use of TF-IDF for rubric retrieval
 3. **API Design**: RESTful API with proper error handling
 4. **Modular Design**: Easy to extend and modify individual components
 
-### System Architecture Weaknesses
-
-1. **Rubric Detection**: TF-IDF may not be optimal for subject classification
-2. **LLM Integration**: No caching or optimization for repeated similar queries
-3. **Error Handling**: Limited graceful degradation for edge cases
-4. **Performance**: No asynchronous processing or optimization
-
-### Code Quality Observations
-
-1. **Good Practices**: 
-   - Proper use of Pydantic models
-   - Clean API structure
-   - Adequate error handling in most cases
-
-2. **Areas for Improvement**:
-   - Limited logging for debugging
-   - No configuration management
-   - Hard-coded thresholds and parameters
-
-### Improvements
+### Improvements to be made
 
 #### 1. Advanced AI Features
 - **Multi-model Support**: Support different LLM providers
