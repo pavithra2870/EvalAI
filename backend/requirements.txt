@@ -1,0 +1,15 @@
+# ── Core backend ──────────────────────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+pydantic==2.7.0
+requests==2.31.0
+
+# ── Retrieval (TF-IDF fallback, always required) ──────────────────────────────
+scikit-learn==1.4.2
+numpy>=1.24.0
+
+# ── Semantic retrieval (RECOMMENDED — significant accuracy improvement) ────────
+# Enables all-MiniLM-L6-v2 embedding-based rubric retrieval.
+# PyTorch CPU (~300 MB) is pulled in automatically.
+# Remove this line to run with TF-IDF only (zero-extra-dependency mode).
+sentence-transformers>=2.7.0

@@ -1,0 +1,452 @@
+{
+  "test_run": {
+    "timestamp": "2026-04-29T22:30:52.927120",
+    "api_url": "http://localhost:8000",
+    "total_cases": 15,
+    "passed": 11,
+    "failed": 0,
+    "errors": 1
+  },
+  "test_results": [
+    {
+      "test_id": "physics_newton_1",
+      "subject": "physics",
+      "expected_rubric": "physics_1",
+      "question": "Explain Newton's second law of motion and give an example.",
+      "answer": "Newton's second law states that force equals mass times acceleration (F=ma). For example, pushing a heavier cart requires more force to achieve the same acceleration.",
+      "expected_marks_range": [
+        4,
+        5
+      ],
+      "difficulty": "medium",
+      "description": "Good explanation with correct formula and example",
+      "timestamp": "2026-04-29T22:30:54.974098",
+      "api_response": {
+        "rubric_id": "physics_1",
+        "marks_awarded": 4,
+        "max_marks": 5,
+        "feedback": "Good explanation of Newton's second law but could provide more context and details.",
+        "justification": "Conceptual Understanding: 2/2 — accurately states F=ma. Application: 1/2 — example is provided but lacks context. Terminology: 1/1 — correct terminology used.",
+        "response_time": 18.322147846221924
+      },
+      "rubric_match": true,
+      "marks_in_range": true,
+      "status": "passed"
+    },
+    {
+      "test_id": "physics_newton_2",
+      "subject": "physics",
+      "expected_rubric": "physics_1",
+      "question": "Explain Newton's second law of motion and give an example.",
+      "answer": "It's about motion and stuff. Things move when you push them.",
+      "expected_marks_range": [
+        0,
+        2
+      ],
+      "difficulty": "medium",
+      "description": "Poor explanation lacking scientific accuracy",
+      "timestamp": "2026-04-29T22:31:13.297389",
+      "api_response": {
+        "rubric_id": "physics_1",
+        "marks_awarded": 1,
+        "max_marks": 5,
+        "feedback": "Lacks conceptual understanding and correct terminology.",
+        "justification": "Conceptual Understanding: 0/2 — incorrect statement of Newton's law. Terminology: 0/1 — incorrect physics terminology used.",
+        "response_time": 27.134979724884033
+      },
+      "rubric_match": true,
+      "marks_in_range": true,
+      "status": "passed"
+    },
+    {
+      "test_id": "physics_energy_1",
+      "subject": "physics",
+      "expected_rubric": "physics_2",
+      "question": "What is the difference between kinetic and potential energy? Provide examples.",
+      "answer": "Kinetic energy is the energy of motion, like a moving car. Potential energy is stored energy, like a book on a shelf. The total mechanical energy is conserved in an ideal system.",
+      "expected_marks_range": [
+        4,
+        5
+      ],
+      "difficulty": "medium",
+      "description": "Complete explanation with examples",
+      "timestamp": "2026-04-29T22:31:40.434009",
+      "api_response": {
+        "rubric_id": "physics_2",
+        "marks_awarded": 4,
+        "max_marks": 5,
+        "feedback": "Correct definitions of kinetic and potential energy, but formula usage could be more detailed.",
+        "justification": "Definition: 2/2 — accurate definitions given. Formula Usage: 1/2 — correct formulas mentioned but not applied. Units: 1/1 — correct SI units stated.",
+        "response_time": 16.258169174194336
+      },
+      "rubric_match": true,
+      "marks_in_range": true,
+      "status": "passed"
+    },
+    {
+      "test_id": "physics_waves_1",
+      "subject": "physics",
+      "expected_rubric": "physics_3",
+      "question": "Explain the properties of electromagnetic waves and how they differ from sound waves.",
+      "answer": "Electromagnetic waves can travel through vacuum and don't require a medium. Sound waves need a medium to propagate. EM waves include light, radio waves, and X-rays, while sound waves are mechanical vibrations.",
+      "expected_marks_range": [
+        3,
+        4
+      ],
+      "difficulty": "hard",
+      "description": "Good comparison of wave types",
+      "timestamp": "2026-04-29T22:31:56.694392",
+      "api_response": {
+        "rubric_id": "physics_3",
+        "marks_awarded": 3,
+        "max_marks": 4,
+        "feedback": "Good explanation of properties and examples, but incorrect application of wave equation.",
+        "justification": "Properties: 2/2 — accurately described wave properties. Examples: 1/1 — provided relevant real-world examples. Equation: 0/1 — incorrectly applied v = fλ.",
+        "response_time": 46.23280358314514
+      },
+      "rubric_match": true,
+      "marks_in_range": true,
+      "status": "passed"
+    },
+    {
+      "test_id": "math_algebra_1",
+      "subject": "mathematics",
+      "expected_rubric": "math_1",
+      "question": "Solve the equation 2x + 5 = 13 and show your work.",
+      "answer": "2x + 5 = 13. Subtract 5 from both sides: 2x = 8. Divide both sides by 2: x = 4. The solution is x = 4.",
+      "expected_marks_range": [
+        4,
+        5
+      ],
+      "difficulty": "easy",
+      "description": "Correct solution with proper steps",
+      "timestamp": "2026-04-29T22:32:42.929316",
+      "api_response": {
+        "rubric_id": "math_1",
+        "marks_awarded": 5,
+        "max_marks": 5,
+        "feedback": "Good work, but calculation could be shown in more detail.",
+        "justification": "Setup: 1/1 — equation correctly set up. Method: 2/2 — valid algebraic method used. Calculation: 1/1 — arithmetic steps are correct. Final Answer: 1/1 — correct final answer given.",
+        "response_time": 18.80639910697937
+      },
+      "rubric_match": true,
+      "marks_in_range": true,
+      "status": "passed"
+    },
+    {
+      "test_id": "math_algebra_2",
+      "subject": "mathematics",
+      "expected_rubric": "math_1",
+      "question": "Solve the equation 2x + 5 = 13 and show your work.",
+      "answer": "x = 13 - 5 = 8. So x = 8.",
+      "expected_marks_range": [
+        2,
+        3
+      ],
+      "difficulty": "easy",
+      "description": "Incorrect solution process",
+      "timestamp": "2026-04-29T22:33:01.738447",
+      "api_response": {
+        "rubric_id": "math_1",
+        "marks_awarded": 5,
+        "max_marks": 5,
+        "feedback": "Correct setup, valid method, and correct final answer.",
+        "justification": "Setup: 1/1 — equation correctly set up. Method: 2/2 — valid algebraic method used. Calculation: 1/1 — arithmetic steps correct. Final Answer: 1/1 — correct final answer given.",
+        "response_time": 32.80719447135925
+      },
+      "rubric_match": true,
+      "marks_in_range": false,
+      "status": "partial"
+    },
+    {
+      "test_id": "math_geometry_1",
+      "subject": "mathematics",
+      "expected_rubric": "math_2",
+      "question": "Prove that the sum of angles in a triangle is 180 degrees.",
+      "answer": "Consider triangle ABC. Draw a line through point A parallel to side BC. The alternate angles are equal, so angle B equals angle DAB and angle C equals angle EAC. Since DAB + BAC + EAC = 180° (straight line), we have angle B + angle A + angle C = 180°.",
+      "expected_marks_range": [
+        4,
+        5
+      ],
+      "difficulty": "medium",
+      "description": "Correct geometric proof",
+      "timestamp": "2026-04-29T22:33:34.546638",
+      "api_response": {
+        "rubric_id": "math_2",
+        "marks_awarded": 4,
+        "max_marks": 5,
+        "feedback": "Clear logical steps and correct conclusion, but theorem identification could be more precise.",
+        "justification": "Theorem Identification: 1/2 — The relevant theorem is not explicitly stated, but the concept is understood. Logical Steps: 2/2 — Clear and logical steps are provided. Conclusion: 1/1 — Correct conclusion is reached and stated.",
+        "response_time": 19.478156089782715
+      },
+      "rubric_match": true,
+      "marks_in_range": true,
+      "status": "passed"
+    },
+    {
+      "test_id": "math_calculus_1",
+      "subject": "mathematics",
+      "expected_rubric": "math_3",
+      "question": "Find the derivative of f(x) = x³ + 2x² - 5x + 1.",
+      "answer": "Using the power rule: f'(x) = 3x² + 4x - 5. The derivative of x³ is 3x², derivative of 2x² is 4x, derivative of -5x is -5, and derivative of constant 1 is 0.",
+      "expected_marks_range": [
+        4,
+        5
+      ],
+      "difficulty": "medium",
+      "description": "Correct differentiation with explanation",
+      "timestamp": "2026-04-29T22:33:54.025799",
+      "api_response": {
+        "rubric_id": "math_3",
+        "marks_awarded": 4,
+        "max_marks": 5,
+        "feedback": "Good application of rules and computation but simplification was not fully addressed.",
+        "justification": "Rule Application: 2/2 — power rule correctly applied. Computation: 2/2 — derivative computed correctly. Simplification: 0/1 — result not simplified to standard form.",
+        "response_time": 41.89610004425049
+      },
+      "rubric_match": true,
+      "marks_in_range": true,
+      "status": "passed"
+    },
+    {
+      "test_id": "english_essay_1",
+      "subject": "english",
+      "expected_rubric": "english_1",
+      "question": "Write a short essay on the importance of education in modern society.",
+      "answer": "Education plays a crucial role in modern society by providing individuals with knowledge, skills, and opportunities for personal and professional growth. It empowers people to think critically, solve problems, and contribute meaningfully to their communities. Furthermore, education promotes social mobility, reduces inequality, and drives economic development. In today's rapidly changing world, continuous learning has become essential for adaptation and innovation.",
+      "expected_marks_range": [
+        4,
+        5
+      ],
+      "difficulty": "medium",
+      "description": "Well-structured essay with clear arguments",
+      "timestamp": "2026-04-29T22:34:35.921898",
+      "api_response": {
+        "rubric_id": "english_1",
+        "marks_awarded": 5,
+        "max_marks": 5,
+        "feedback": "Good essay with clear structure and relevant content.",
+        "justification": "Structure: 2/2 — introduction, body paragraphs, and conclusion were all present. Content: 2/2 — arguments were relevant and well-developed. Language: 1/1 — no grammatical errors or issues with vocabulary/style.",
+        "response_time": 13.995940923690796
+      },
+      "rubric_match": true,
+      "marks_in_range": true,
+      "status": "passed"
+    },
+    {
+      "test_id": "english_essay_2",
+      "subject": "english",
+      "expected_rubric": "english_1",
+      "question": "Write a short essay on the importance of education in modern society.",
+      "answer": "Education is good. People need it. It helps them get jobs and learn stuff. Schools are important for kids to study.",
+      "expected_marks_range": [
+        1,
+        2
+      ],
+      "difficulty": "medium",
+      "description": "Poorly written essay with limited content",
+      "timestamp": "2026-04-29T22:34:49.918759",
+      "api_response": {
+        "rubric_id": "english_1",
+        "marks_awarded": 3,
+        "max_marks": 5,
+        "feedback": "Good essay with clear structure and relevant content, but could benefit from more varied language.",
+        "justification": "Structure: 2/2 — introduction, body paragraphs, and conclusion were all present. Content: 1/2 — arguments were relevant but not particularly well-developed. Language: 0/1 — grammar was mostly correct but lacked varied vocabulary and appropriate style.",
+        "response_time": 14.106795310974121
+      },
+      "rubric_match": true,
+      "marks_in_range": false,
+      "status": "partial"
+    },
+    {
+      "test_id": "english_literary_1",
+      "subject": "english",
+      "expected_rubric": "english_2",
+      "question": "Analyze the theme of ambition in Shakespeare's Macbeth.",
+      "answer": "In Macbeth, ambition serves as both a driving force and a destructive flaw. The protagonist's unchecked ambition, fueled by the witches' prophecy and Lady Macbeth's encouragement, leads him to murder Duncan and descend into tyranny. Shakespeare explores how ambition, when divorced from morality, corrupts absolutely. The play suggests that ambition must be balanced with ethical considerations to avoid self-destruction.",
+      "expected_marks_range": [
+        4,
+        5
+      ],
+      "difficulty": "hard",
+      "description": "Good literary analysis with specific examples",
+      "timestamp": "2026-04-29T22:35:04.025554",
+      "api_response": {
+        "rubric_id": "english_2",
+        "marks_awarded": 4,
+        "max_marks": 5,
+        "feedback": "Good analysis but could benefit from more direct quotes to support claims.",
+        "justification": "Comprehension: 2/2 — demonstrates understanding of the plot and characters. Analysis: 1/2 — good analysis of the theme, but could delve deeper into literary devices and techniques. Evidence: 1/1 — supports claims with direct quote from the text.",
+        "response_time": 23.514230012893677
+      },
+      "rubric_match": true,
+      "marks_in_range": true,
+      "status": "passed"
+    },
+    {
+      "test_id": "edge_case_empty",
+      "subject": "general",
+      "expected_rubric": "fallback",
+      "question": "What is the meaning of life?",
+      "answer": "",
+      "expected_marks_range": [
+        0,
+        0
+      ],
+      "difficulty": "easy",
+      "description": "Empty answer edge case",
+      "timestamp": "2026-04-29T22:35:27.540783",
+      "status": "error",
+      "error": "HTTP 422: {\"detail\":[{\"type\":\"string_too_short\",\"loc\":[\"body\",\"answer\"],\"msg\":\"String should have at least 1 character\",\"input\":\"\",\"ctx\":{\"min_length\":1}}]}",
+      "response_time": 2.0571908950805664
+    },
+    {
+      "test_id": "edge_case_irrelevant",
+      "subject": "general",
+      "expected_rubric": "fallback",
+      "question": "Explain photosynthesis in plants.",
+      "answer": "The stock market crashed in 1929 causing the Great Depression. This led to widespread unemployment and economic hardship worldwide.",
+      "expected_marks_range": [
+        0,
+        1
+      ],
+      "difficulty": "medium",
+      "description": "Completely irrelevant answer",
+      "timestamp": "2026-04-29T22:35:29.598977",
+      "api_response": {
+        "rubric_id": "fallback",
+        "marks_awarded": 0,
+        "max_marks": 5,
+        "feedback": "Answer is completely off-topic and does not address the question about photosynthesis.",
+        "justification": "Relevance: 0/2 — completely irrelevant topic. Accuracy: 0/2 — no factual accuracy. Clarity: 0/1 — poorly written and disorganised.",
+        "response_time": 40.32794642448425
+      },
+      "rubric_match": true,
+      "marks_in_range": true,
+      "status": "passed"
+    },
+    {
+      "test_id": "edge_case_ambiguous",
+      "subject": "general",
+      "expected_rubric": "fallback",
+      "question": "What is your favorite color and why?",
+      "answer": "Blue is nice because it reminds me of the ocean and sky. It's calming and peaceful.",
+      "expected_marks_range": [
+        2,
+        4
+      ],
+      "difficulty": "easy",
+      "description": "Subjective question without clear rubric",
+      "timestamp": "2026-04-29T22:36:09.927839",
+      "api_response": {
+        "rubric_id": "fallback",
+        "marks_awarded": 0,
+        "max_marks": 5,
+        "feedback": "Evaluation could not be completed automatically.",
+        "justification": "Fallback triggered — All 3 attempts failed: ['No valid JSON object found in LLM response']",
+        "response_time": 27.236277103424072
+      },
+      "rubric_match": true,
+      "marks_in_range": false,
+      "status": "partial"
+    },
+    {
+      "test_id": "performance_long",
+      "subject": "physics",
+      "expected_rubric": "physics_1",
+      "question": "Explain Newton's second law of motion and give an example.",
+      "answer": "Newton's second law of motion is a fundamental principle in classical mechanics that describes the relationship between force, mass, and acceleration. The law states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. This relationship is mathematically expressed as F = ma, where F represents the net force applied to an object, m is the mass of the object, and a is the resulting acceleration. The law implies that for a given mass, a greater force will produce a greater acceleration, and for a given force, a greater mass will result in a smaller acceleration. This principle can be observed in everyday situations, such as when pushing a shopping cart - a fully loaded cart requires more force to achieve the same acceleration as an empty cart. Similarly, in sports, a heavier athlete requires more force to accelerate to the same speed as a lighter athlete. The law also explains why it's easier to push a small car than a large truck, even when both are on the same surface. Newton's second law is essential for understanding and predicting the motion of objects in various contexts, from simple mechanical systems to complex engineering applications.",
+      "expected_marks_range": [
+        4,
+        5
+      ],
+      "difficulty": "medium",
+      "description": "Long, detailed answer for performance testing",
+      "timestamp": "2026-04-29T22:36:37.165176",
+      "api_response": {
+        "rubric_id": "physics_1",
+        "marks_awarded": 5,
+        "max_marks": 5,
+        "feedback": "Excellent explanation of Newton's second law, with a clear example and correct terminology.",
+        "justification": "Conceptual Understanding: 2/2 — accurately states the law and its relationship to force and mass. Application: 2/2 — provides a relevant example of the law in action. Terminology: 1/1 — uses correct physics terminology throughout the explanation.",
+        "response_time": 15.520223617553711
+      },
+      "rubric_match": true,
+      "marks_in_range": true,
+      "status": "passed"
+    }
+  ],
+  "performance_metrics": {
+    "response_time": {
+      "mean": 25.402668816702707,
+      "median": 21.496193051338196,
+      "min": 13.995940923690796,
+      "max": 46.23280358314514,
+      "std": 10.559988907225666
+    },
+    "accuracy": {
+      "pass_rate": 73.33333333333333,
+      "partial_rate": 20.0,
+      "fail_rate": 0.0,
+      "error_rate": 6.666666666666667,
+      "total_tests": 15
+    },
+    "rubric_detection": {
+      "accuracy": 100.0,
+      "total_evaluated": 14
+    },
+    "subject_performance": {
+      "physics": {
+        "pass_rate": 100.0,
+        "total_tests": 5
+      },
+      "mathematics": {
+        "pass_rate": 75.0,
+        "total_tests": 4
+      },
+      "english": {
+        "pass_rate": 66.66666666666666,
+        "total_tests": 3
+      },
+      "general": {
+        "pass_rate": 33.33333333333333,
+        "total_tests": 3
+      }
+    },
+    "difficulty_performance": {
+      "medium": {
+        "pass_rate": 88.88888888888889,
+        "total_tests": 9
+      },
+      "hard": {
+        "pass_rate": 100.0,
+        "total_tests": 2
+      },
+      "easy": {
+        "pass_rate": 25.0,
+        "total_tests": 4
+      }
+    }
+  },
+  "analysis": {},
+  "metadata": {
+    "total_cases": 15,
+    "subjects": {
+      "physics": 4,
+      "mathematics": 3,
+      "english": 3,
+      "general": 5
+    },
+    "difficulty_distribution": {
+      "easy": 4,
+      "medium": 8,
+      "hard": 3
+    },
+    "test_categories": {
+      "normal_cases": 10,
+      "edge_cases": 3,
+      "performance_cases": 1,
+      "quality_cases": 1
+    }
+  }
+}

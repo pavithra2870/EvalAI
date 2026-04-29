@@ -1,0 +1,16 @@
+test_id,subject,difficulty,description,status,rubric_match,marks_in_range,expected_rubric,actual_rubric,marks_awarded,max_marks,response_time,expected_min,expected_max,score_percentage,within_expected_range,rubric_correct,performance_category
+physics_newton_1,physics,medium,Good explanation with correct formula and example,passed,True,True,physics_1,physics_1,4,5,18.322147846221924,4,5,80.0,True,True,Excellent
+physics_newton_2,physics,medium,Poor explanation lacking scientific accuracy,passed,True,True,physics_1,physics_1,1,5,27.134979724884033,0,2,20.0,True,True,Excellent
+physics_energy_1,physics,medium,Complete explanation with examples,passed,True,True,physics_2,physics_2,4,5,16.258169174194336,4,5,80.0,True,True,Excellent
+physics_waves_1,physics,hard,Good comparison of wave types,passed,True,True,physics_3,physics_3,3,4,46.23280358314514,3,4,75.0,True,True,Excellent
+math_algebra_1,mathematics,easy,Correct solution with proper steps,passed,True,True,math_1,math_1,5,5,18.80639910697937,4,5,100.0,True,True,Excellent
+math_algebra_2,mathematics,easy,Incorrect solution process,partial,True,False,math_1,math_1,5,5,32.80719447135925,2,3,100.0,False,True,Fair
+math_geometry_1,mathematics,medium,Correct geometric proof,passed,True,True,math_2,math_2,4,5,19.478156089782715,4,5,80.0,True,True,Excellent
+math_calculus_1,mathematics,medium,Correct differentiation with explanation,passed,True,True,math_3,math_3,4,5,41.89610004425049,4,5,80.0,True,True,Excellent
+english_essay_1,english,medium,Well-structured essay with clear arguments,passed,True,True,english_1,english_1,5,5,13.995940923690796,4,5,100.0,True,True,Excellent
+english_essay_2,english,medium,Poorly written essay with limited content,partial,True,False,english_1,english_1,3,5,14.106795310974121,1,2,60.0,False,True,Fair
+english_literary_1,english,hard,Good literary analysis with specific examples,passed,True,True,english_2,english_2,4,5,23.514230012893677,4,5,80.0,True,True,Excellent
+edge_case_empty,general,easy,Empty answer edge case,error,False,False,fallback,,0,0,0.0,0,0,,False,False,Failed
+edge_case_irrelevant,general,medium,Completely irrelevant answer,passed,True,True,fallback,fallback,0,5,40.32794642448425,0,1,0.0,True,True,Excellent
+edge_case_ambiguous,general,easy,Subjective question without clear rubric,partial,True,False,fallback,fallback,0,5,27.236277103424072,2,4,0.0,False,True,Fair
+performance_long,physics,medium,"Long, detailed answer for performance testing",passed,True,True,physics_1,physics_1,5,5,15.520223617553711,4,5,100.0,True,True,Excellent

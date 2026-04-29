@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EvalAI Test Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .header { background-color: #f0f0f0; padding: 20px; border-radius: 5px; }
+        .section { margin: 20px 0; }
+        .metric { display: inline-block; margin: 10px; padding: 15px; background-color: #e8f4f8; border-radius: 5px; }
+        .chart { text-align: center; margin: 20px 0; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .passed { color: green; }
+        .partial { color: orange; }
+        .failed { color: red; }
+        .error { color: darkred; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>EvalAI Test Results Analysis Report</h1>
+        <p>Generated: 2026-04-29 22:37:03</p>
+        <p>Test Run: 2026-04-29T22:30:52.927120</p>
+        <p>API URL: http://localhost:8000</p>
+    </div>
+    
+    <div class="section">
+        <h2>Overall Statistics</h2>
+        <div class="metric">
+            <h3>15</h3>
+            <p>Total Tests</p>
+        </div>
+        <div class="metric">
+            <h3 class="passed">11</h3>
+            <p>Passed (73.3%)</p>
+        </div>
+        <div class="metric">
+            <h3 class="partial">3</h3>
+            <p>Partial</p>
+        </div>
+        <div class="metric">
+            <h3 class="failed">0</h3>
+            <p>Failed</p>
+        </div>
+        <div class="metric">
+            <h3 class="error">1</h3>
+            <p>Errors</p>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Performance Metrics</h2>
+
+        <div class="metric">
+            <h3>25.40s</h3>
+            <p>Avg Response Time</p>
+        </div>
+        <div class="metric">
+            <h3>21.50s</h3>
+            <p>Median Response Time</p>
+        </div>
+
+        <div class="metric">
+            <h3>100.0%</h3>
+            <p>Rubric Detection Accuracy</p>
+        </div>
+
+    </div>
+    
+    <div class="section">
+        <h2>Detailed Test Results</h2>
+        <table>
+            <tr>
+                <th>Test ID</th>
+                <th>Subject</th>
+                <th>Difficulty</th>
+                <th>Status</th>
+                <th>Expected Rubric</th>
+                <th>Actual Rubric</th>
+                <th>Marks</th>
+                <th>Response Time</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td>physics_newton_1</td>
+                <td>physics</td>
+                <td>medium</td>
+                <td class="passed">PASSED</td>
+                <td>physics_1</td>
+                <td>physics_1</td>
+                <td>4/5</td>
+                <td>18.32s</td>
+                <td>Good explanation with correct formula and example</td>
+            </tr>
+
+            <tr>
+                <td>physics_newton_2</td>
+                <td>physics</td>
+                <td>medium</td>
+                <td class="passed">PASSED</td>
+                <td>physics_1</td>
+                <td>physics_1</td>
+                <td>1/5</td>
+                <td>27.13s</td>
+                <td>Poor explanation lacking scientific accuracy</td>
+            </tr>
+
+            <tr>
+                <td>physics_energy_1</td>
+                <td>physics</td>
+                <td>medium</td>
+                <td class="passed">PASSED</td>
+                <td>physics_2</td>
+                <td>physics_2</td>
+                <td>4/5</td>
+                <td>16.26s</td>
+                <td>Complete explanation with examples</td>
+            </tr>
+
+            <tr>
+                <td>physics_waves_1</td>
+                <td>physics</td>
+                <td>hard</td>
+                <td class="passed">PASSED</td>
+                <td>physics_3</td>
+                <td>physics_3</td>
+                <td>3/4</td>
+                <td>46.23s</td>
+                <td>Good comparison of wave types</td>
+            </tr>
+
+            <tr>
+                <td>math_algebra_1</td>
+                <td>mathematics</td>
+                <td>easy</td>
+                <td class="passed">PASSED</td>
+                <td>math_1</td>
+                <td>math_1</td>
+                <td>5/5</td>
+                <td>18.81s</td>
+                <td>Correct solution with proper steps</td>
+            </tr>
+
+            <tr>
+                <td>math_algebra_2</td>
+                <td>mathematics</td>
+                <td>easy</td>
+                <td class="partial">PARTIAL</td>
+                <td>math_1</td>
+                <td>math_1</td>
+                <td>5/5</td>
+                <td>32.81s</td>
+                <td>Incorrect solution process</td>
+            </tr>
+
+            <tr>
+                <td>math_geometry_1</td>
+                <td>mathematics</td>
+                <td>medium</td>
+                <td class="passed">PASSED</td>
+                <td>math_2</td>
+                <td>math_2</td>
+                <td>4/5</td>
+                <td>19.48s</td>
+                <td>Correct geometric proof</td>
+            </tr>
+
+            <tr>
+                <td>math_calculus_1</td>
+                <td>mathematics</td>
+                <td>medium</td>
+                <td class="passed">PASSED</td>
+                <td>math_3</td>
+                <td>math_3</td>
+                <td>4/5</td>
+                <td>41.90s</td>
+                <td>Correct differentiation with explanation</td>
+            </tr>
+
+            <tr>
+                <td>english_essay_1</td>
+                <td>english</td>
+                <td>medium</td>
+                <td class="passed">PASSED</td>
+                <td>english_1</td>
+                <td>english_1</td>
+                <td>5/5</td>
+                <td>14.00s</td>
+                <td>Well-structured essay with clear arguments</td>
+            </tr>
+
+            <tr>
+                <td>english_essay_2</td>
+                <td>english</td>
+                <td>medium</td>
+                <td class="partial">PARTIAL</td>
+                <td>english_1</td>
+                <td>english_1</td>
+                <td>3/5</td>
+                <td>14.11s</td>
+                <td>Poorly written essay with limited content</td>
+            </tr>
+
+            <tr>
+                <td>english_literary_1</td>
+                <td>english</td>
+                <td>hard</td>
+                <td class="passed">PASSED</td>
+                <td>english_2</td>
+                <td>english_2</td>
+                <td>4/5</td>
+                <td>23.51s</td>
+                <td>Good literary analysis with specific examples</td>
+            </tr>
+
+            <tr>
+                <td>edge_case_empty</td>
+                <td>general</td>
+                <td>easy</td>
+                <td class="error">ERROR</td>
+                <td>fallback</td>
+                <td>N/A</td>
+                <td>0/0</td>
+                <td>0.00s</td>
+                <td>Empty answer edge case</td>
+            </tr>
+
+            <tr>
+                <td>edge_case_irrelevant</td>
+                <td>general</td>
+                <td>medium</td>
+                <td class="passed">PASSED</td>
+                <td>fallback</td>
+                <td>fallback</td>
+                <td>0/5</td>
+                <td>40.33s</td>
+                <td>Completely irrelevant answer</td>
+            </tr>
+
+            <tr>
+                <td>edge_case_ambiguous</td>
+                <td>general</td>
+                <td>easy</td>
+                <td class="partial">PARTIAL</td>
+                <td>fallback</td>
+                <td>fallback</td>
+                <td>0/5</td>
+                <td>27.24s</td>
+                <td>Subjective question without clear rubric</td>
+            </tr>
+
+            <tr>
+                <td>performance_long</td>
+                <td>physics</td>
+                <td>medium</td>
+                <td class="passed">PASSED</td>
+                <td>physics_1</td>
+                <td>physics_1</td>
+                <td>5/5</td>
+                <td>15.52s</td>
+                <td>Long, detailed answer for performance testing</td>
+            </tr>
+
+        </table>
+    </div>
+    
+    <div class="section">
+        <h2>Charts</h2>
+        <div class="chart">
+            <h3>Test Status Distribution</h3>
+            <img src="charts/test_status_distribution.png" alt="Test Status Distribution">
+        </div>
+        <div class="chart">
+            <h3>Response Time Analysis</h3>
+            <img src="charts/response_time_analysis.png" alt="Response Time Analysis">
+        </div>
+        <div class="chart">
+            <h3>Subject Performance</h3>
+            <img src="charts/subject_performance.png" alt="Subject Performance">
+        </div>
+        <div class="chart">
+            <h3>Difficulty Performance</h3>
+            <img src="charts/difficulty_performance.png" alt="Difficulty Performance">
+        </div>
+        <div class="chart">
+            <h3>Marks Analysis</h3>
+            <img src="charts/marks_analysis.png" alt="Marks Analysis">
+        </div>
+
+    </div>
+    
+</body>
+</html>

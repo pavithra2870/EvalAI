@@ -1,0 +1,174 @@
+{
+  "test_cases": [
+    {
+      "id": "physics_newton_1",
+      "subject": "physics",
+      "expected_rubric": "physics_1",
+      "question": "Explain Newton's second law of motion and give an example.",
+      "answer": "Newton's second law states that force equals mass times acceleration (F=ma). For example, pushing a heavier cart requires more force to achieve the same acceleration.",
+      "expected_marks_range": [4, 5],
+      "difficulty": "medium",
+      "description": "Good explanation with correct formula and example"
+    },
+    {
+      "id": "physics_newton_2",
+      "subject": "physics",
+      "expected_rubric": "physics_1",
+      "question": "Explain Newton's second law of motion and give an example.",
+      "answer": "It's about motion and stuff. Things move when you push them.",
+      "expected_marks_range": [0, 2],
+      "difficulty": "medium",
+      "description": "Poor explanation lacking scientific accuracy"
+    },
+    {
+      "id": "physics_energy_1",
+      "subject": "physics",
+      "expected_rubric": "physics_2",
+      "question": "What is the difference between kinetic and potential energy? Provide examples.",
+      "answer": "Kinetic energy is the energy of motion, like a moving car. Potential energy is stored energy, like a book on a shelf. The total mechanical energy is conserved in an ideal system.",
+      "expected_marks_range": [4, 5],
+      "difficulty": "medium",
+      "description": "Complete explanation with examples"
+    },
+    {
+      "id": "physics_waves_1",
+      "subject": "physics",
+      "expected_rubric": "physics_3",
+      "question": "Explain the properties of electromagnetic waves and how they differ from sound waves.",
+      "answer": "Electromagnetic waves can travel through vacuum and don't require a medium. Sound waves need a medium to propagate. EM waves include light, radio waves, and X-rays, while sound waves are mechanical vibrations.",
+      "expected_marks_range": [3, 4],
+      "difficulty": "hard",
+      "description": "Good comparison of wave types"
+    },
+    {
+      "id": "math_algebra_1",
+      "subject": "mathematics",
+      "expected_rubric": "math_1",
+      "question": "Solve the equation 2x + 5 = 13 and show your work.",
+      "answer": "2x + 5 = 13. Subtract 5 from both sides: 2x = 8. Divide both sides by 2: x = 4. The solution is x = 4.",
+      "expected_marks_range": [4, 5],
+      "difficulty": "easy",
+      "description": "Correct solution with proper steps"
+    },
+    {
+      "id": "math_algebra_2",
+      "subject": "mathematics",
+      "expected_rubric": "math_1",
+      "question": "Solve the equation 2x + 5 = 13 and show your work.",
+      "answer": "x = 13 - 5 = 8. So x = 8.",
+      "expected_marks_range": [2, 3],
+      "difficulty": "easy",
+      "description": "Incorrect solution process"
+    },
+    {
+      "id": "math_geometry_1",
+      "subject": "mathematics",
+      "expected_rubric": "math_2",
+      "question": "Prove that the sum of angles in a triangle is 180 degrees.",
+      "answer": "Consider triangle ABC. Draw a line through point A parallel to side BC. The alternate angles are equal, so angle B equals angle DAB and angle C equals angle EAC. Since DAB + BAC + EAC = 180° (straight line), we have angle B + angle A + angle C = 180°.",
+      "expected_marks_range": [4, 5],
+      "difficulty": "medium",
+      "description": "Correct geometric proof"
+    },
+    {
+      "id": "math_calculus_1",
+      "subject": "mathematics",
+      "expected_rubric": "math_3",
+      "question": "Find the derivative of f(x) = x³ + 2x² - 5x + 1.",
+      "answer": "Using the power rule: f'(x) = 3x² + 4x - 5. The derivative of x³ is 3x², derivative of 2x² is 4x, derivative of -5x is -5, and derivative of constant 1 is 0.",
+      "expected_marks_range": [4, 5],
+      "difficulty": "medium",
+      "description": "Correct differentiation with explanation"
+    },
+    {
+      "id": "english_essay_1",
+      "subject": "english",
+      "expected_rubric": "english_1",
+      "question": "Write a short essay on the importance of education in modern society.",
+      "answer": "Education plays a crucial role in modern society by providing individuals with knowledge, skills, and opportunities for personal and professional growth. It empowers people to think critically, solve problems, and contribute meaningfully to their communities. Furthermore, education promotes social mobility, reduces inequality, and drives economic development. In today's rapidly changing world, continuous learning has become essential for adaptation and innovation.",
+      "expected_marks_range": [4, 5],
+      "difficulty": "medium",
+      "description": "Well-structured essay with clear arguments"
+    },
+    {
+      "id": "english_essay_2",
+      "subject": "english",
+      "expected_rubric": "english_1",
+      "question": "Write a short essay on the importance of education in modern society.",
+      "answer": "Education is good. People need it. It helps them get jobs and learn stuff. Schools are important for kids to study.",
+      "expected_marks_range": [1, 2],
+      "difficulty": "medium",
+      "description": "Poorly written essay with limited content"
+    },
+    {
+      "id": "english_literary_1",
+      "subject": "english",
+      "expected_rubric": "english_2",
+      "question": "Analyze the theme of ambition in Shakespeare's Macbeth.",
+      "answer": "In Macbeth, ambition serves as both a driving force and a destructive flaw. The protagonist's unchecked ambition, fueled by the witches' prophecy and Lady Macbeth's encouragement, leads him to murder Duncan and descend into tyranny. Shakespeare explores how ambition, when divorced from morality, corrupts absolutely. The play suggests that ambition must be balanced with ethical considerations to avoid self-destruction.",
+      "expected_marks_range": [4, 5],
+      "difficulty": "hard",
+      "description": "Good literary analysis with specific examples"
+    },
+    {
+      "id": "edge_case_empty",
+      "subject": "general",
+      "expected_rubric": "fallback",
+      "question": "What is the meaning of life?",
+      "answer": "",
+      "expected_marks_range": [0, 0],
+      "difficulty": "easy",
+      "description": "Empty answer edge case"
+    },
+    {
+      "id": "edge_case_irrelevant",
+      "subject": "general",
+      "expected_rubric": "fallback",
+      "question": "Explain photosynthesis in plants.",
+      "answer": "The stock market crashed in 1929 causing the Great Depression. This led to widespread unemployment and economic hardship worldwide.",
+      "expected_marks_range": [0, 1],
+      "difficulty": "medium",
+      "description": "Completely irrelevant answer"
+    },
+    {
+      "id": "edge_case_ambiguous",
+      "subject": "general",
+      "expected_rubric": "fallback",
+      "question": "What is your favorite color and why?",
+      "answer": "Blue is nice because it reminds me of the ocean and sky. It's calming and peaceful.",
+      "expected_marks_range": [2, 4],
+      "difficulty": "easy",
+      "description": "Subjective question without clear rubric"
+    },
+    {
+      "id": "performance_long",
+      "subject": "physics",
+      "expected_rubric": "physics_1",
+      "question": "Explain Newton's second law of motion and give an example.",
+      "answer": "Newton's second law of motion is a fundamental principle in classical mechanics that describes the relationship between force, mass, and acceleration. The law states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. This relationship is mathematically expressed as F = ma, where F represents the net force applied to an object, m is the mass of the object, and a is the resulting acceleration. The law implies that for a given mass, a greater force will produce a greater acceleration, and for a given force, a greater mass will result in a smaller acceleration. This principle can be observed in everyday situations, such as when pushing a shopping cart - a fully loaded cart requires more force to achieve the same acceleration as an empty cart. Similarly, in sports, a heavier athlete requires more force to accelerate to the same speed as a lighter athlete. The law also explains why it's easier to push a small car than a large truck, even when both are on the same surface. Newton's second law is essential for understanding and predicting the motion of objects in various contexts, from simple mechanical systems to complex engineering applications.",
+      "expected_marks_range": [4, 5],
+      "difficulty": "medium",
+      "description": "Long, detailed answer for performance testing"
+    }
+  ],
+  "metadata": {
+    "total_cases": 15,
+    "subjects": {
+      "physics": 4,
+      "mathematics": 3,
+      "english": 3,
+      "general": 5
+    },
+    "difficulty_distribution": {
+      "easy": 4,
+      "medium": 8,
+      "hard": 3
+    },
+    "test_categories": {
+      "normal_cases": 10,
+      "edge_cases": 3,
+      "performance_cases": 1,
+      "quality_cases": 1
+    }
+  }
+}

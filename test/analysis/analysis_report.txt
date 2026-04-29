@@ -1,0 +1,52 @@
+================================================================================
+EVALAI TEST RESULTS ANALYSIS REPORT
+================================================================================
+Generated: 2026-04-29 22:37:01
+Test Run: 2026-04-29T22:30:52.927120
+API URL: http://localhost:8000
+
+OVERALL STATISTICS
+----------------------------------------
+Total Tests: 15
+Passed: 11 (73.3%)
+Partial: 3 (20.0%)
+Failed: 0 (0.0%)
+Errors: 1 (6.7%)
+
+RESPONSE TIME ANALYSIS
+----------------------------------------
+Mean: 25.40s
+Median: 21.50s
+Min: 14.00s
+Max: 46.23s
+Std Dev: 10.56s
+
+RUBRIC DETECTION ACCURACY
+----------------------------------------
+Accuracy: 100.0%
+Total Evaluated: 14
+
+PERFORMANCE BY SUBJECT
+----------------------------------------
+english     :  66.7% ( 3 tests)
+general     :  33.3% ( 3 tests)
+mathematics :  75.0% ( 4 tests)
+physics     : 100.0% ( 5 tests)
+
+PERFORMANCE BY DIFFICULTY
+----------------------------------------
+easy    :  25.0% ( 4 tests)
+hard    : 100.0% ( 2 tests)
+medium  :  88.9% ( 9 tests)
+
+ERROR TESTS ANALYSIS
+----------------------------------------
+• edge_case_empty: Empty answer edge case
+  Error: HTTP 422: {"detail":[{"type":"string_too_short","loc":["body","answer"],"msg":"String should have at least 1 character","input":"","ctx":{"min_length":1}}]}
+
+RECOMMENDATIONS
+----------------------------------------
+• Optimize response time - average above 15 seconds
+• Focus on improving performance for: general
+
+================================================================================
