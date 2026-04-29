@@ -118,8 +118,8 @@ Higher than the original 0.1 — reduces the model's tendency to output zero mar
 
 ```
 Attempt 0  →  standard prompt
-Attempt 1  →  "⚠ RETRY: Previous attempt was rejected. Ensure EVERY criterion..."
-Attempt 2  →  "⚠ FINAL ATTEMPT: address all N criteria..."
+Attempt 1  →  "RETRY: Previous attempt was rejected. Ensure EVERY criterion..."
+Attempt 2  →  "FINAL ATTEMPT: address all N criteria..."
 ```
 After 3 failed attempts, the last parsed result is returned as best-effort (marks clamped to valid range). If no JSON was ever parsed, the fallback response is returned.
 
@@ -172,8 +172,6 @@ python -m venv .venv
 
 # Windows
 .venv\Scripts\activate
-# macOS / Linux
-source .venv/bin/activate
 
 pip install -r requirements.txt
 ```
